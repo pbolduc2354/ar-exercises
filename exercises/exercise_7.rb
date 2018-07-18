@@ -10,3 +10,8 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+@input_name = gets.chomp
+
+input_store = Store.create(name: @input_name)
+
+pp input_store.errors.messages
